@@ -1,0 +1,26 @@
+@import "../../../styles/variables.scss";
+
+.accordion {
+  &.history-list-card {
+    background-color: $white;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    .card-header {
+      background-color: $white;
+      border-bottom: 1px solid $grey-border;
+      min-height: 40px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .box {
+        min-width: 24px;
+        min-height: 24px;
+        background-color: red;
+        border-radius: 50%;
+      }
+    }
+  }
+}

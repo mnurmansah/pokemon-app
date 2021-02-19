@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.splash-screen {
+  height: 100vh;
+
+  @media screen and (max-width: 575.98px) {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.image-link {
+  display: block;
+  margin: 0 auto;
+  width: 305.39px;
+  height: 240.54px;
+}
+
+.step-page {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 10px;
+}

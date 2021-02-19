@@ -1,0 +1,33 @@
+@import "../../../node_modules/react-day-picker/lib/style.css";
+@import "../../styles/variables.scss";
+
+.custom-daterangepicker {
+  .DayPicker {
+    .DayPicker-Caption {
+      color: $daypicker-caption;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  
+    .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
+      background-color: #f0f8ff !important;
+      color: #4a90e2;
+    }
+  
+    .DayPicker-Day {
+      border-radius: 0 !important;
+    }
+  
+    .DayPicker-Day--start {
+      border-top-left-radius: 50% !important;
+      border-bottom-left-radius: 50% !important;
+      background: linear-gradient(135deg, #5efce8 0%, #736efe 100%);
+    }
+  
+    .DayPicker-Day--end {
+      border-top-right-radius: 50% !important;
+      border-bottom-right-radius: 50% !important;
+      background: linear-gradient(135deg, #5efce8 0%, #736efe 100%);
+    }
+  }
+}

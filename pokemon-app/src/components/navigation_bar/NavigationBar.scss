@@ -1,0 +1,41 @@
+@import "../../styles/variables.scss";
+
+.navigation-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 56px;
+}
+
+.navigation-group {
+  height: 56px;
+
+  .add-button-holder {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.navigation-icon {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  background-color: $white;
+}
+
+.add-button {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #5efce8 0%, #736efe 100%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+}
