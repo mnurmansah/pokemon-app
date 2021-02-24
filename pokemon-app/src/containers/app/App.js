@@ -5,12 +5,9 @@ import { createBrowserHistory } from 'history';
 import Error404 from '../../components/error_404/Error404';
 import History from '../history/History';
 import Login from '../login/Login';
-import ForgotPassword from '../forgot_password/ForgotPassword';
-import Register from '../register/Register';
 import Dashboard from '../dashboard/Dashboard';
-import SaldoAwal from '../saldo_awal/SaldoAwal';
-import SplashScreenContainer from '../splash_screen/SplashScreenContainer';
 import Home from '../home/Home';
+import MyPokemon from '../mypokemon/MyPokemon';
 
 const history = createBrowserHistory();
 
@@ -24,11 +21,8 @@ function App() {
               <Route path="/" exact component={Home} />
               <Route path="/history" exact component={History} />
               <Route path="/login" exact component={Login} />
-              <Route path="/register" exact component={Register} />
-              <Route path="/forgot-password" exact component={ForgotPassword} />
-              <Route path="/welcome" exact component={SplashScreenContainer} />
-              <Route path="/saldo-awal" exact component={SaldoAwal} />
               <Route path="/dashboard" exact component={Dashboard} />
+              <Route path="/mypokemon" exact component={MyPokemon} />
               <Route path="*" component={Error404} />
             </Switch>
           </Router>
